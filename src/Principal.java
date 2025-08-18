@@ -1,3 +1,4 @@
+import br.com.alura.screenmatch.modelos.Filme;
 public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
@@ -9,8 +10,8 @@ public class Principal {
         meuFilme.avalia(8);
         meuFilme.avalia(5);
         meuFilme.avalia(10);
-        System.out.println(meuFilme.somaDasAvaliacoes);
-        System.out.println(meuFilme.totalDeAvaliacoes);
+        String mensagem = String.format("O filme %s teve %d avaliações", meuFilme.nome, meuFilme.getTotalDeAvaliacoes());
+        System.out.println(mensagem);
         System.out.println(meuFilme.pegaMedia());
 
     }
