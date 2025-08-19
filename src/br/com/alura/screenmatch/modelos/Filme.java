@@ -1,6 +1,8 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Filme extends Titulo { //O extends chama os atributos e métodos da classe Titulo
+import br.com.alura.screenmatch.calculos.Classificavel;
+
+public class Filme extends Titulo implements Classificavel{ //O extends chama os atributos e métodos da classe Titulo
 
     private String diretor;
 
@@ -12,5 +14,10 @@ public class Filme extends Titulo { //O extends chama os atributos e métodos da
     public String getDiretor()
     {
         return diretor;
+    }
+
+    @Override
+    public float getClassificado() {
+       return  (int) pegaMedia() / 2;
     }
 }

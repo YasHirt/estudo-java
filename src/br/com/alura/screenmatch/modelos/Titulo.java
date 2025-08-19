@@ -29,6 +29,10 @@ public class Titulo {
     {
         this.incluidoNoPlano = plano;
     }
+    public int getDuracaoEmMinutos()
+    {
+        return duracaoEmMinutos;
+    }
     public void exibeFichaTecnica(){
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
@@ -48,4 +52,4 @@ public class Titulo {
         return totalDeAvaliacoes;
     }
 }
-
+ 
