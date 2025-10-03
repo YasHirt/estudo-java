@@ -9,6 +9,10 @@ public class Serie extends Titulo implements Classificavel
     private int episodiosPorTemporada;
     private boolean ativa;
 
+
+    public Serie(String nomeDaSerie, int anoDeLancamento, int duracaoEmMinutos) {
+        super(nomeDaSerie, anoDeLancamento, duracaoEmMinutos); //Chama o construtor da classe pai
+    }
     public void setMinutosPorEpisodio(int minutosEpisodio)
     {
         this.minutosPorEpisodio = minutosEpisodio;
@@ -45,4 +49,9 @@ public class Serie extends Titulo implements Classificavel
         return 6;
     }
 
+    @Override
+     public void exibeFichaTecnica(){
+        System.out.println("Nome da serie: " + getNome());
+        System.out.println("Ano de lançamento: " + getAnoDeLancamento());
+    }
 }

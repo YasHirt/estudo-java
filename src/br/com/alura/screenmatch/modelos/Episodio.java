@@ -7,6 +7,7 @@ public class Episodio implements Classificavel {
     private String nome;
     private Serie serie;
     private int visualizacoes;
+
     public int getVisualizacoes() {
         return visualizacoes;
     }

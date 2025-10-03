@@ -1,12 +1,18 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Titulo {
+public class Titulo { //superclasse
     private String nome;
     private int anoDeLancamento;
     private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
     public int duracaoEmMinutos;
+
+    public Titulo(String nome, int anoDeLancamento, int duracaoEmMinutos) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+        this.duracaoEmMinutos = duracaoEmMinutos;
+    }
 
     public void setNome(String nome) //retorna void, setters são diferentes de construtores 
     {
@@ -50,6 +56,11 @@ public class Titulo {
     public int getTotalDeAvaliacoes()
     {
         return totalDeAvaliacoes;
+    }
+
+    public int getAnoDeLancamento()
+    {
+        return anoDeLancamento;
     }
 }
  
