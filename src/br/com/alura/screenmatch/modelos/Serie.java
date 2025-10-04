@@ -54,4 +54,9 @@ public class Serie extends Titulo implements Classificavel
         System.out.println("Nome da serie: " + getNome());
         System.out.println("Ano de lançamento: " + getAnoDeLancamento());
     }
+    @Override
+    public String toString()
+    {
+        return "Série: " + this.getNome() + " Ano de Lancamento: " + this.getAnoDeLancamento();
+    }
 }
